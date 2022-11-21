@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIROTIC</title>
+    <!--importar fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.scss">
+    <!-- Load external CSS styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Load external JavaScript -->
+    <script src="script/myscript.js"></script>
+    <script src="script/all.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--carousel-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <!---->
+    <link rel="shortcut icon" href="css/imgs/logo.png">
+  </head>
+  <body>
+    <section id="home">
+      <div class="div-geral">
+        <!--menu-->
+        <header class="header">
+          <nav class="menu">
+            <ul>
+              <li>
+                <a href="#home">Inicio</a>
+              </li>
+              <li>
+                <a href="#gallery">Galeria</a>
+              </li>
+              <li>
+                <a href="./info.html">Informe-se</a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/virotic.js/">Instagram</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <!--conteudo-->
+        <div class="main">
+          <div class="topo">
+            <h1 id="nome"> VIROTIC </h1>
+            <h3> Com o objetivo de informar, conscientizar e educar sobre as pandemias históricas vividas pela humanidade, o Museu Virotic apresenta quadros de artistas que as vivenciaram, informando não somente sobre a arte, mas também sobre os vírus causadores e seus sintomas que dizimaram populações ao longo dos séculos. Veja as exposições em destaque: </h3>
+            <h3></h3>
+          </div>
+          <div class="art-container">
+            <div class="art-box" id="destaque_1">
+              <a class="link-obra1">
+                <div class="info">
+                  <h3> Peste Negra </h3>
+                  <p> Doença que atingiu o continente europeu em meados do século XIV (1343–1353). Conheca as obras de autores como: Arnold Böcklin e Pieter Brueguel que retratam momentos vividos na época</p>
+                  <button class="link-button" onclick="window.location.href='peste/peste.html'">Entrar</button>
+                </div>
+              </a>
+            </div>
+            <div class="art-box" id="destaque_2">
+              <a class="link-obra1">
+                <div class="info">
+                  <h3> Gripe Espanhola </h3>
+                  <p> A gripe espanhola recebeu esse nome em razão da forte divulgação do problema na imprensa espanhola. Na época que a doença se espalhou o mundo passava pela Primeira Guerra Mundial. O artista Edvard Munch representou a doença em uma de suas obras. Acesse a galeria para ver mais detalhes.</p>
+                  <button class="link-button" onclick="window.location.href='gripEsp/gripesp.html'">Entrar</button>
+                </div>
+              </a>
+            </div>
+            <div class="art-box" id="destaque_3">
+              <a class="link-obra1">
+                <div class="info">
+                  <h3> Cólera </h3>
+                  <p> Sete pandemias de cólera ocorreram nos últimos 200 anos. Durante a terceira delas, Pavel Fedotov pintou uma morte por cólera repesentando pânico, terror e indiferença. Clique para ver mais</p>
+                  <button class="link-button" onclick="window.location.href='colera/colera.html'">Entrar</button>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="more">
+            <h2>Desça para ver mais &#8595;</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="gallery">
+      <div class="main">
+        <div class="topo">
+          <h1 id="nome"> Galeria </h1>
+          <h3> Veja todas as nossas exposições. Observe informações como a origem do microrganismo, como foi erradicada além de dados sobre as obras </h3>
+        </div>
+        <div class="slider owl-carousel">
+          <div class="card">
+            <div class="img">
+              <img src="css/imgs/image2a.png" alt="">
+            </div>
+            <div class="content">
+              <div class="title">
+                <h3>Peste Negra</h3>
+              </div>
+              <div class="sub-title">
+                <h4>Doença bacteriana</h4>
+              </div>
+              <p>Atingiu o continente europeu em meados do século XIV (1343–1353). Artistas como: Arnold Böcklin e Pieter Brueguel retrataram momentos vividos na época:</p>
+              <button class="link-button" onclick="window.location.href='peste/peste.html'">Entrar</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="css/imgs/image7.png" alt="">
+            </div>
+            <div class="content">
+              <div class="title">
+                <h3>Gripe espanhola</h3>
+              </div>
+              <div class="sub-title">
+                <h4>Infecção viral</h4>
+              </div>
+              <p>A pandemia infectou uma estimativa de 500 milhões de pessoas. O artista Edvard Munch representou a doença em uma de suas obras. Clique e veja mais:</p>
+              <button class="link-button" onclick="window.location.href='gripeEsp/gripesp.html'">Entrar</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="css/imgs/image9.png" alt="">
+            </div>
+            <div class="content">
+              <div class="title">
+                <h3>Cólera</h3>
+              </div>
+              <div class="sub-title">
+                <h4>Doença bacteriana</h4>
+              </div>
+              <p>Sete pandemias de cólera ocorreram nos últimos 200 anos. Pavel Fedotov pintou uma morte por cólera repesentando pânico, terror e indiferença. Clique e veja mais:</p>
+              <button class="link-button" onclick="window.location.href='colera/colera.html'">Entrar</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="css/imgs/image8.png" alt="">
+            </div>
+            <div class="content">
+              <div class="title">
+                <h3>Tuberculose</h3>
+              </div>
+              <div class="sub-title">
+                <h4>Doença bacteriana</h4>
+              </div>
+              <p>A tuberculose, também chamada de ‘peste branca’ ou ‘doença do peito’. Em sua obra, Fidélio Ponce de León destaca o isolamento dos personagens. Clique e veja mais:</p>
+              <button class="link-button" onclick="window.location.href='tuberculose/tuberculose.html'">Entrar</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="css/imgs/image16.jpg" alt="">
+            </div>
+            <div class="content">
+              <div class="title">
+                <h3>Peste de Atenas</h3>
+              </div>
+              <div class="sub-title">
+                <h4>Doença bacteriana</h4>
+              </div>
+              <p>A peste de Atenas é como ficou conhecida a epidemia que atingiu a cidade de Atenas entre 430 a.C. e 427 a.C. Clique e veja mais:</p>
+              <button class="link-button" onclick="window.location.href='pesteAtenas/pesteAtenas.html'">Entrar</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="css/imgs/interroga.jpg" alt="">
+            </div>
+            <div class="content">
+              <div class="title">
+                <h3>Informe-se</h3>
+              </div>
+              <div class="sub-title">
+                <h4>O que é...</h4>
+              </div>
+              <p>Pandemia; Epidemia; Endemia; Surto; Infecção; Doença e Virose</p>
+              <button class="link-button" onclick="window.location.href='info.html'">Entrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script>
+        $('.slider').owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: true,
+          autoplay: true,
+          autoplayTimeout: 3000, //2000ms = 2s;
+          autoplayHoverPause: true,
+          responsive: {
+            0: {
+              items: 1
+            },
+            600: {
+              items: 2
+            },
+            1000: {
+              items: 3
+            }
+          }
+        });
+      </script>
+    </section>
+  </body>
+</html>
