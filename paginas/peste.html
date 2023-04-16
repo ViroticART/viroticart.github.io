@@ -14,8 +14,17 @@
     <link rel="stylesheet" href="../css/peste.css">
     
     <!-- Load external JavaScript -->
-    <script src="/script/myscript.js"></script>
+    <!--carousel-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+    <script src="../script/script.js"></script>
+    
     
     <!--Configuração de página-->
     <link rel="shortcut icon" href="css/imgs/logo.png">
@@ -160,43 +169,7 @@
         <div class="bar"></div>
       </div>
     </div>
-    <script>
-      $(document).ready(function() {
-        // required elements
-        var imgPopup = $('.img-popup');
-        var imgCont = $('.pintura');
-        var popupImage = $('.img-popup img');
-        var closeBtn = $('.close-btn');
-        // handle events
-        imgCont.on('click', function() {
-          var img_src = $(this).children('img').attr('src');
-          imgPopup.children('img').attr('src', img_src);
-          imgPopup.addClass('opened');
-        });
-        $(imgPopup, closeBtn).on('click', function() {
-          imgPopup.removeClass('opened');
-          imgPopup.children('img').attr('src', '');
-        });
-        popupImage.on('click', function(e) {
-          e.stopPropagation();
-        });
-      });
-
-      function reveal() {
-        var reveals = document.querySelectorAll(".reveal");
-        for (var i = 0; i < reveals.length; i++) {
-          var windowHeight = window.innerHeight;
-          var elementTop = reveals[i].getBoundingClientRect().top;
-          var elementVisible = 150;
-          if (elementTop < windowHeight - elementVisible) {
-            reveals[i].classList.add("active");
-          } else {
-            reveals[i].classList.remove("active");
-          }
-        }
-      }
-      window.addEventListener("scroll", reveal);
-      reveal();
-    </script>
+    
+    
   </body>
 </html>
