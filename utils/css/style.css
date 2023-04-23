@@ -2,8 +2,9 @@
 * {
 	margin: 0;
 	padding: 0;
-  }
-  /*ajuste de fontes*/
+}
+
+/*ajuste de fontes*/
   #home h1,
   #home h2,
   #home h3,
@@ -36,6 +37,14 @@
 	text-transform: uppercase;
 	margin-bottom: 5px;
   }
+.home-section {
+    display: flex;
+    flex-direction: column;
+	min-height: 80vh;
+	min-width: 80vw;
+	justify-content: center;
+	background-color: #ffcc65;
+}
   .topo h3 {
 	margin-left: 25px;
 	margin-right: 25px;
@@ -76,13 +85,6 @@
   }
   /**/
   /*primeira secao(ajuste de conteudo)*/
-  #home {
-	min-height: 80vh;
-	min-width: 80vw;
-	display: flex;
-	justify-content: center;
-	background-color: #ffcc65;
-  }
   #gallery {
 	background-color: #000b33;
 	min-height: 100vh;
