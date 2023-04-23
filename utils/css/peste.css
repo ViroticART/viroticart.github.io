@@ -6,18 +6,16 @@ body {
   overflow-x: hidden;
 }
 
-/*ajuste de fontes*/
-#home h1,
-#home h2,
-#home h3,
-#home li,
-#home p,
-#home span {
-  font-family: "League Spartan", sans-serif;
-  font-weight: normal;
-  color: #000b33;
+.home-section h1,
+.home-section h2,
+.home-section h3,
+.home-section li,
+.home-section p,
+.home-section span {
+font-family: "League Spartan", sans-serif;
+font-weight: normal;
+color: #000b33;
 }
-
 #gallery h1,
 #gallery h2,
 #gallery h3,

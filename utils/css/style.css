@@ -5,6 +5,7 @@
 }
 
 /*ajuste de fontes*/
+
   .home-section h1,
   .home-section h2,
   .home-section h3,
@@ -15,6 +16,7 @@
 	font-weight: normal;
 	color: #000b33;
   }
+
   #gallery h1,
   #gallery h2,
   #gallery h3,
@@ -50,16 +52,16 @@
 	margin-right: 25px;
   }
   /*menu*/
-  .header {
+  .header-menu {
 	background-color: #e8aa00;
   }
-  .menu {
+  .nav-menu {
 	text-align: center;
   }
-  .menu ul li {
+  .nav-menu ul li {
 	display: inline-block;
   }
-  .menu ul li a {
+  .nav-menu ul li a {
 	display: block;
 	color: #000;
 	padding: 10px 15px;
@@ -77,9 +79,9 @@
 	-webkit-transition-property: transform;
 	transition-property: transform;
   }
-  .menu ul li a:hover,
-  .menu ul li a:focus,
-  .menu ul li a:active {
+  .nav-menu ul li a:hover,
+  .nav-menu ul li a:focus,
+  .nav-menu ul li a:active {
 	-webkit-transform: scale(1.2);
 	transform: scale(1.2);
   }
