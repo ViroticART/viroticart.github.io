@@ -5,12 +5,12 @@
 }
 
 /*ajuste de fontes*/
-  #home h1,
-  #home h2,
-  #home h3,
-  #home li,
-  #home p,
-  #home span {
+  .home-section h1,
+  .home-section h2,
+  .home-section h3,
+  .home-section li,
+  .home-section p,
+  .home-section span {
 	font-family: "League Spartan", sans-serif;
 	font-weight: normal;
 	color: #000b33;
@@ -100,14 +100,14 @@
 	place-items: center;
 	text-align: center;
   }
-  #home .art-container {
+  .home-section .art-container {
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 10px;
 	justify-content: center;
 	align-items: center;
   }
-  #home .art-container .art-box {
+  .home-section .art-container .art-box {
 	margin: 20px;
 	padding: 20px;
 	transition: box-shadow 0.3s;
@@ -193,7 +193,7 @@
   section .art-box p {
 	text-align: center;
   }
-  #home .topo {
+  .home-section .topo {
 	margin-top: 30px;
 	text-align: center;
 	margin-bottom: 50px;
