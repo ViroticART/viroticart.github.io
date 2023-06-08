@@ -12,9 +12,9 @@ body {
 .home-section li,
 .home-section p,
 .home-section span {
-font-family: "League Spartan", sans-serif;
-font-weight: normal;
-color: #000b33;
+  font-family: "League Spartan", sans-serif;
+	font-weight: normal;
+	color: #000b33;
 }
 #gallery h1,
 #gallery h2,

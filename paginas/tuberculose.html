@@ -11,14 +11,16 @@
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap" rel="stylesheet">
     
     <!-- Carrega arquivos CSS da na pasta peste TROCAR URGENTE-->
-    <link rel="stylesheet" href="../css/peste.css">
+    <link rel="stylesheet" href="../utils/css/peste.css">
     
     <!-- Load external JavaScript -->
-    <script src="/script/myscript.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../utils/js/jquery.min.js"></script>
+    <script src="../utils/js/jquery-3.5.1.js"></script>
+    <script src="../utils/js/owl.carousel.min.js"></script>
+    <script src="../utils/js/script.js"></script>
     
     <!--Configuração de página-->
-    <link rel="shortcut icon" href="../css/imgs/logo.png">
+    <link rel="shortcut icon" href="../utils/img/logo.png">
     <title>Tuberculose e a arte</title>
 
   </head>
@@ -36,7 +38,7 @@
                 <a href="#gallery">Resumo</a>
               </li>
               <li>
-                <a href="./info.html">Informe-se</a>
+                <a href="info.html">Informe-se</a>
               </li>
               <li>
                 <a href="https://www.instagram.com/virotic.js/">Instagram</a>
@@ -58,7 +60,7 @@
                   <h2>“Tuberculose”</h2>
                   <h2>- Fidélio Ponce de León</h2>
                   <div class="pintura">
-                    <img src="../css/imgs/tuberculose.jpg" id="tuberculose-quadro">
+                    <img src="../utils/img/tuberculose.jpg" id="tuberculose-quadro">
                     <p id="advise">Clique nas imagens para expandir</p>
                   </div>
                   <p>A pintura de Poncio de León é moderna, mas ao mesmo tempo inserida na tradição. Prova disso são as figuras alongadas que aparecem com tanta frequência em suas composições, assim como El Greco fez no século XVI e, mais recentemente, Amadeo Modigliani.</p>
@@ -68,7 +70,7 @@
                 <div class="coluna" id="autor">
                   <h2>Sobre o artista</h2>
                   <div class="pintura" id="autoretrato">
-                    <img style="max-width: 250px;"src="../css/imgs/image8.png" id="ponce">
+                    <img style="max-width: 250px;"src="../utils/img/image8.png" id="ponce">
                 </div>
                 <p>Fidelio Ponce de León (24 de janeiro de 1895  – 19 de fevereiro de 1949) foi o pseudônimo de Alfredo Fuentes Pons , um pintor cubano . Natural de Camagüey , estudou na Academia San Alejandro em Havana de 1913 a 1918. </p>
                 <p>Junto com Antonio Gattorno , Victor Manuel , Amelia Peláez e Wifredo Lam , é considerado parte do movimento “Vanguardia” na arte cubana ; no entanto, ao contrário de muitos de seus contemporâneos, ele nunca estudou na Europa e, portanto, teve relativamente pouco contato com o modernismo europeu. </p>
@@ -81,21 +83,6 @@
           </div>
         </div>
       </div>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-      <script>
-        $('.slider').owlCarousel({
-          loop: true,
-          margin: 10,
-          nav: true,
-          autoplay: true,
-          autoplayTimeout: 30000, //30000ms = 30s;
-          autoplayHoverPause: true,
-          singleItem: true,
-          items: 1,
-          dots: true
-        });
-      </script>
       </div>
       </div>
     </section>
@@ -112,7 +99,7 @@
             <p> Hipócrates, médico da Grécia Antiga, observou que a tísica foi a doença mais disseminada e fatal do seu tempo. Estima-se que a bactéria causadora da doença tenha evoluído há 15 ou 20 mil anos, a partir de outras bactérias do gênero Mycobacterium.</p>
             <br>
             <div class="pintura" id="img1">
-              <img src="../css/imgs/tuberculosis.jpg" class="img-hover" id="h1n1-micro">
+              <img src="../utils/img/tuberculosis.jpg" class="img-hover" id="h1n1-micro">
               <p id="advise">Clique nas imagens para expandir</p>
               <h3 class="txt-destaque">Bactéria Mycobacterium tuberculosis, causadora da tuberculose, vista em microscópio</h3>
             </div>
@@ -144,43 +131,5 @@
         <div class="bar"></div>
       </div>
     </div>
-    <script>
-      $(document).ready(function() {
-        // required elements
-        var imgPopup = $('.img-popup');
-        var imgCont = $('.pintura');
-        var popupImage = $('.img-popup img');
-        var closeBtn = $('.close-btn');
-        // handle events
-        imgCont.on('click', function() {
-          var img_src = $(this).children('img').attr('src');
-          imgPopup.children('img').attr('src', img_src);
-          imgPopup.addClass('opened');
-        });
-        $(imgPopup, closeBtn).on('click', function() {
-          imgPopup.removeClass('opened');
-          imgPopup.children('img').attr('src', '');
-        });
-        popupImage.on('click', function(e) {
-          e.stopPropagation();
-        });
-      });
-
-      function reveal() {
-        var reveals = document.querySelectorAll(".reveal");
-        for (var i = 0; i < reveals.length; i++) {
-          var windowHeight = window.innerHeight;
-          var elementTop = reveals[i].getBoundingClientRect().top;
-          var elementVisible = 150;
-          if (elementTop < windowHeight - elementVisible) {
-            reveals[i].classList.add("active");
-          } else {
-            reveals[i].classList.remove("active");
-          }
-        }
-      }
-      window.addEventListener("scroll", reveal);
-      reveal();
-    </script>
   </body>
 </html>

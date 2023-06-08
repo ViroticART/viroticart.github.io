@@ -11,14 +11,16 @@
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap" rel="stylesheet">
     
     <!-- Carrega arquivos CSS da na pasta peste TROCAR URGENTE-->
-    <link rel="stylesheet" href="../css/peste.css">
+    <link rel="stylesheet" href="../utils/css/peste.css">
     
     <!-- Load external JavaScript -->
-    <script src="/script/myscript.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../utils/js/jquery.min.js"></script>
+    <script src="../utils/js/jquery-3.5.1.js"></script>
+    <script src="../utils/js/owl.carousel.min.js"></script>
+    <script src="../utils/js/script.js"></script>
     
     <!--Configuração de página-->
-    <link rel="shortcut icon" href="../css/imgs/logo.png">
+    <link rel="shortcut icon" href="../utils/img/logo.png">
     <title>A Peste de Atenas</title>
   </head>
   <body>
@@ -35,7 +37,7 @@
                 <a href="#gallery">Resumo</a>
               </li>
               <li>
-                <a href="./info.html">Informe-se</a>
+                <a href="info.html">Informe-se</a>
               </li>
               <li>
                 <a href="https://www.instagram.com/virotic.js/">Instagram</a>
@@ -56,7 +58,7 @@
                   <h2>“Peste Numa Cidade Antiga”</h2>
                   <h2>- Michiel Sweerts</h2>
                   <div class="pintura">
-                    <img src="../css/imgs/atenas.jpg" id="tuberculose-quadro">
+                    <img src="../utils/img/atenas.jpg" id="tuberculose-quadro">
                     <p id="advise">Clique nas imagens para expandir</p>
                   </div>
                   <p>A pintura de Sweerts, “Praga em uma cidade antiga”, é vista por alguns como uma representação tanto de preocupações contemporâneas quanto de temas históricos. Os historiadores da arte discordam se a pintura retrata ou não um surto específico da peste no mundo clássico, já que muitas das obras de Sweerts são de natureza alegórica. É provável que este trabalho também seja tanto uma reflexão sobre valores sociais e culturais quanto uma tentativa de capturar com precisão um momento específico no tempo.</p>
@@ -65,7 +67,7 @@
                 <div class="coluna" id="autor">
                   <h2>Sobre o artista</h2>
                   <div class="pintura" id="autoretrato">
-                    <img style="max-width: 250px;"src="../css/imgs/sweerts.jpg" id="ponce">
+                    <img style="max-width: 250px;"src="../utils/img/sweerts.jpg" id="ponce">
                 </div>
                 <p>Michiel Sweerts ou Michael Sweerts (29 de setembro de 1618 - 1 de junho de 1664) foi um pintor e gravurista flamengo do período barroco, que é conhecido por suas pinturas alegóricas e de gênero. O artista levou uma vida itinerante e trabalhou em Roma, Bruxelas, Amesterdão, Pérsia e Índia (Goa).</p>
                 <p>Ele chegou a Roma em 1646, onde permaneceu ativo até 1652 (ou 1654). Em Roma, ele logo se tornou ligado ao círculo de pintores flamengos e holandeses associados a Pieter van Laer, que é considerado o fundador do Bamboccianti. Quando Sweerts chegou a Roma, o próprio van Laer já havia deixado a cidade. Os Bamboccianti trouxeram consigo as tradições existentes de retratar súditos camponeses da arte holandesa do século XVI para a Itália. Eles criaram pequenas pinturas de armário ou gravuras da vida cotidiana das classes mais baixas em Roma em seu campo. </p>
@@ -79,21 +81,6 @@
           </div>
         </div>
       </div>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-      <script>
-        $('.slider').owlCarousel({
-          loop: true,
-          margin: 10,
-          nav: true,
-          autoplay: true,
-          autoplayTimeout: 30000, //30000ms = 30s;
-          autoplayHoverPause: true,
-          singleItem: true,
-          items: 1,
-          dots: true
-        });
-      </script>
       </div>
       </div>
     </section>
@@ -140,43 +127,5 @@
         <div class="bar"></div>
       </div>
     </div>
-    <script>
-      $(document).ready(function() {
-        // required elements
-        var imgPopup = $('.img-popup');
-        var imgCont = $('.pintura');
-        var popupImage = $('.img-popup img');
-        var closeBtn = $('.close-btn');
-        // handle events
-        imgCont.on('click', function() {
-          var img_src = $(this).children('img').attr('src');
-          imgPopup.children('img').attr('src', img_src);
-          imgPopup.addClass('opened');
-        });
-        $(imgPopup, closeBtn).on('click', function() {
-          imgPopup.removeClass('opened');
-          imgPopup.children('img').attr('src', '');
-        });
-        popupImage.on('click', function(e) {
-          e.stopPropagation();
-        });
-      });
-
-      function reveal() {
-        var reveals = document.querySelectorAll(".reveal");
-        for (var i = 0; i < reveals.length; i++) {
-          var windowHeight = window.innerHeight;
-          var elementTop = reveals[i].getBoundingClientRect().top;
-          var elementVisible = 150;
-          if (elementTop < windowHeight - elementVisible) {
-            reveals[i].classList.add("active");
-          } else {
-            reveals[i].classList.remove("active");
-          }
-        }
-      }
-      window.addEventListener("scroll", reveal);
-      reveal();
-    </script>
   </body>
 </html>
